@@ -1,0 +1,334 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+    /* 1rem= 10px */
+}
+
+
+
+body {
+    font-family: 'Noto Sans', sans-serif;
+
+    overflow-x: hidden;
+}
+
+ul {
+    list-style: none;
+}
+:root {
+    --color-primary: #ff2b85;
+    --color-secondary: #ffffff;
+    --color-text: #000000;
+    --body-text: #343b46;
+}
+
+a {
+    text-decoration: none;
+    color: var(--body-text);
+}
+
+#navbar {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 6.5rem;
+}
+
+.container {
+    width: 110rem;
+    margin: 0 auto;
+}
+
+#navbar .items ul {
+    display: flex;
+
+
+    width: max-content;
+}
+
+#navbar .items ul li {
+    list-style: none;
+    margin: 0 1rem;
+    font-weight: 700;
+    font-size: 1.4rem;
+    line-height: 6.4rem;
+    
+
+}
+
+
+#navbar .items ul li button {
+    border: none;
+    background-color: var(--color-primary);
+    color: var(--color-secondary);
+    padding: 1.2rem 2rem;
+    border-radius: 2.5rem;
+    font-weight: 600;
+    line-height: 1.6rem;
+    font-family: inherit;
+
+
+}
+
+#navbar .items ul li i {
+    font-size: 1.6rem;
+    line-height: 2.4rem;
+}
+/* crack */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+html {
+    font-size : 62.5%;
+}
+
+:root {
+    --color-primary: white;
+    --color-secondary: #FF2B85;
+    --color-secondary-hover: #ff006a;
+    --color-text: #313030;
+}
+
+li {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+.container {
+    width: 90vw;
+    margin: 0 auto;
+}
+header{
+    background-color: white;
+    width: 100vw;
+    position: sticky;
+    top: 0rem;
+    z-index: 3;
+}
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    line-height: 4.8rem;
+    background-color: white;
+    
+}
+
+.logo {
+    margin-top: 1.8rem;
+}
+
+.active{
+    border-bottom: 3px solid var(--color-secondary-hover);
+    transition: all 0.5s ease;
+}
+.active:hover{
+    border-bottom: 3px solid var(--color-secondary-hover);
+
+}
+.navbar ul {
+    display: flex;
+}
+
+.navbar ul li {
+    justify-content: space-around;
+    margin-right: 2rem;
+}
+
+.navbar ul li:last-child {
+    margin-right: 0;
+}
+
+.navbar ul li a {
+    font-size: 1.4rem;
+    font-weight: 600;
+}
+
+.btn {
+    padding: 1.3rem 1.8rem;
+    background-color: var(--color-secondary);
+    border-radius: 2rem;
+    color: var(--color-primary);
+    transition: all 0.5s ease;
+}
+.btn:hover{
+    background-color: var(--color-secondary-hover);    
+}
+
+.navbar ul li i {
+    font-size: 2rem;
+    margin-right: 0;
+}
+
+.picture-container {
+    position: relative;
+    max-width: 100vw;
+    height: 89vh;
+}
+
+.picture-container .bgpicture{
+    background: url(./assets/img/fp-contact-1.jpeg) no-repeat center center/cover;
+    width: 100vw;
+    height: 89vh;
+    
+}
+
+
+.picture-container .bgpicture::before {
+    position: absolute;
+    content: "";
+    width: 100vw;
+    height: 89vh;
+    
+    background: rgba(35, 31, 32, 0.4);
+    z-index: 1;
+    
+    
+}
+
+.picture-text {
+    position: absolute;
+    bottom: 12rem;
+    left: 15rem;
+    z-index: 2;
+    overflow-x: auto;
+}
+
+.picture-text h3 {
+    color: #ffffff;
+    font-size: 6.1rem;
+    font-weight: 600;
+
+}
+#contact-form{
+    margin: 10rem 0 9rem 15rem;
+}
+#contact-form input{
+    border-radius: 10rem;
+    padding:1.5rem 10rem 1.5rem 2rem;
+    border: 0.1rem solid var(--color-text);
+    font-size: 1.6rem;
+    font-weight: 400;
+}
+#contact-form textarea{
+    border-radius:2rem;
+    padding:1.5rem 10rem 1.5rem 2rem;
+    border: 0.1rem solid var(--color-text);
+    font-size: 1.6rem;
+    font-weight: 400;
+}
+.nameinput{
+    margin-right: 4rem;
+}
+.message{
+    
+    font-family: inherit;
+    
+    margin-top: 4rem;
+}
+#contact-form button{
+    border:0.2rem solid var(--color-primary);
+    
+    padding: 1.2rem 3rem;
+    border-radius: 10rem;
+    margin-top: 3rem;
+    background-color: var(--color-secondary);
+    font-family: inherit;
+    font-weight: 700;
+    font-size: 1.6rem;
+}
+#contact-form button:hover{
+    
+    
+    
+    background-color: var(--color-primary);
+    color: var(--color-secondary);
+}
+
+
+.sendmessage a{
+    
+    color: var(--color-primary);
+    
+}
+.sendmessage a:hover{
+    
+    color: var(--color-secondary);
+    
+}
+
+
+#sec-03 .bgcolor{
+    background-color: #f5f5f6;
+    width: 100%;
+    height: 30vh;
+    
+}
+
+#sec-03 .bgcolor .paragraph{
+font-size: 1.6rem;
+font-weight: 400;
+padding:10.5rem 15rem;
+}
+
+footer{
+    height: 50rem;
+    background-color: black;
+    margin-top: 5rem;
+    color: white;
+    padding-top: 9rem;
+}
+.footer{
+    width: 90%;
+    margin: 0 auto;
+}
+.footersec{
+    margin-top: 3rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+.foot{
+    margin-top: 1rem;
+    
+    display: flex;
+    flex-direction: column;
+}
+.foot3{
+    display: flex;
+    margin-top: 1.5rem;
+}
+.foot3 a i{
+    font-size: 3rem;
+    margin-right: 2rem;
+    
+}
+.foot a{
+    color: var(--color-primary);
+    font-size: 15px;
+}
+.lastfour{
+    display: flex;
+    justify-content: space-between;
+    font-size: 2rem;
+    margin-top: 10rem;
+    color: var(--color-primary);
+}
+
+
+

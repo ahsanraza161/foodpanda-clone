@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
         integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="contactus.css">
+    <link rel="stylesheet" href="about.css">
     <title>FoodPanda</title>
 </head>
 
@@ -21,10 +21,10 @@
                 </div>
                 <ul class="ulnav">
                     <li><a href="./index.html">Home</a></li>
-                    <li><a href="./about.html">About</a></li>
+                    <li><a class="active" href="./about.html">About</a></li>
                     <li><a href="#">Newsroom</a></li>
                     <li><a href="#">Panda Ads</a></li>
-                    <li><a class="active" href="./contactus.html">Contact</a></li>
+                    <li><a href="./contactus.html">Contact</a></li>
                     <li><a href="#">Career</a></li>
                     <li><a class="btn" href="#">Choose Location</a></li>
                     <li><i class="fa-solid fa-magnifying-glass" style="color: #000000;"></i></li>
@@ -32,34 +32,50 @@
             </nav>
         </div>
     </header>
-    <main id="sections">
+x    <main id="sections">
+
         <section id="sec-01">
             <div class="picture-container">
                 <div class="bgpicture"></div>
                 <div class="picture-text">
-                    <h3>Contact us</h3>
+                    <h3>About<br />FoodPanda</h3>
                 </div>
             </div>
         </section>
         <section id="sec-02">
-            <form id="contact-form" >
-                <input type="text" placeholder="Name" class="nameinput" id="name">
-                <input type="email" placeholder="Email" class="emailinput" id="email"><br/>
-                <textarea name="message" id="message" cols="80" rows="20" class="message" placeholder="message"></textarea>
-                <div class="texticon">
-                    <button class="sendmessage" type="submit"><a href="#">Send message </a></button>
-
-                </div>
-            </form>
+            <div class="textcontainer">
+                <p class="heading">From food delivery to your daily convenience companion.</p>
+                <p class="paragraph">A subsidiary of Delivery Hero, foodpanda launched in Singapore in 2014 as a
+                    food delivery platform. Dedicated to helping customers get their tasty favourites fast, it
+                    quickly won the hearts and minds of customers in APAC.
+                    <br /><br />
+                    Powered by tech and operational excellence, foodpanda has been growing its quick-commerce
+                    footprint in more than 400 cities across 11 markets in Asia – Singapore, Hong Kong, Thailand,
+                    Malaysia, Pakistan, Taiwan, Philippines, Bangladesh, Laos, Cambodia, and Myanmar.
+                    <br /> <br />
+                    Thanks to dedicated partners, riders, and a team united by shared values, foodpanda is now
+                    providing millions with a convenient way to get food and groceries in a few taps.
+                </p>
+            </div>
         </section>
+
         <section id="sec-03">
-            <div class="bgcolor">
-                <p class="paragraph">Got a question about your order? Need help with some of your app features? Contact Help Centre via app menu.</p>
+            <div class=picturecontent>
+
+                <div class="content">
+                    <h3>Taste the convenience.</h3>
+                    <p>Try us out! Delicious food and speedy groceries are at your fingertips. Go ahead, download
+                        foodpanda now.</p>
+                    <div class="texticon">
+                        <button class="learnmore"><a href="#">view jobs </a></button>
+
+                    </div>
+                </div>
+                <div class="picture"></div>
             </div>
         </section>
 
     </main>
-
     <footer>
         <div class="footer">
             <div class="img">
@@ -99,4 +115,5 @@
         </div>
     </footer>
 </body>
+
 </html>
